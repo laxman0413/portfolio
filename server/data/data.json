@@ -32,8 +32,8 @@
       "company": "Darwinbox",
       "type": "Full-time",
       "location": "Hyderabad, India",
-      "start": "July 2025",
-      "end": "April 2026",
+      "start": "Jul 2025",
+      "end": "Apr 2026",
       "description": "Leading backend initiatives for automated infrastructure and multi-tenant ticketing systems.",
       "responsibilities": [
         "Designed and deployed a DAG-based backend data pipeline to automate MongoDB Atlas Search index provisioning across distributed environments, reducing manual operations by 90%.",
@@ -65,8 +65,8 @@
       "company": "Darwinbox",
       "type": "Internship",
       "location": "Hyderabad, India",
-      "start": "January 2025",
-      "end": "June 2025",
+      "start": "Jan 2025",
+      "end": "Jun 2025",
       "description": "Focused on AI/ML integration and backend performance optimization.",
       "responsibilities": [
         "Engineered a RAG-based HR analytics engine combining LLMs with vector databases to reduce manual analysis effort by 70%.",
@@ -99,7 +99,7 @@
       "type": "Internship",
       "location": "Guwahati, Assam, India (Remote)",
       "start": "May 2024",
-      "end": "December 2024",
+      "end": "Dec 2024",
       "description": "Full-stack development for social impact projects.",
       "responsibilities": [
         "Developed a full-stack RBAC-enabled web application using React.js, Node.js, and MySQL.",
@@ -122,6 +122,7 @@
   ],
   "projects": [
     {
+      "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*H20Gumbv6J7ae3shR0Liww.png",
       "name": "LLM-Based HR Document Intelligence System",
       "description": "AI-powered HR insights system leveraging LLM prompt engineering to convert large-scale unstructured HR documents into structured tasks.",
       "tech_stack": [
@@ -142,6 +143,7 @@
       "github": null
     },
     {
+      "image":"https://substackcdn.com/image/fetch/$s_!XX4R!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8533bf77-bf19-4feb-b744-c4c29bd38592_1616x892.jpeg",
       "name": "Redis-Inspired In-Memory Key-Value Store",
       "description": "A thread-safe concurrent in-memory key-value store built in C++, inspired by Redis, supporting core operations with TTL-based expiration.",
       "tech_stack": [
@@ -159,6 +161,7 @@
       "github": "https://github.com/laxman0413/Redis-Cpp-In-Memory-Key-Value-Store"
     },
     {
+      "image":"https://images.wondershare.com/democreator/article/web-browser-video-recorder-2.jpg",
       "name": "Browser Screen Recording and Sharing Platform",
       "description": "Browser-based screen recorder with optional voice capture, secure cloud storage, and RBAC-scoped shareable link generation.",
       "tech_stack": [

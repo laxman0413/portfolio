@@ -1,5 +1,6 @@
 import { Component, DestroyRef, OnInit, inject, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpErrorResponse } from '@angular/common/http';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { PortfolioData } from '../../data/portfolio.models';
@@ -54,9 +55,11 @@ export class ContactComponent implements OnInit {
             message: '',
           });
         },
-        error: () => {
+        error: (error: HttpErrorResponse) => {
           this.submitState = 'error';
-          this.submitMessage = 'The message could not be sent. Check the server SMTP settings.';
+          this.submitMessage =
+            error.error?.message ||
+            'The message could not be sent. Check the server SMTP settings.';
         },
       });
   }

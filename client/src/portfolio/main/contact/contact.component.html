@@ -15,9 +15,9 @@
         </div>
 
         <div class="input">
-            <input type="text" formControlName="subject" placeholder="Your website (If exists)" />
+            <input type="text" formControlName="subject" placeholder="Subject" />
             @if (isInvalid('subject')) {
-            <small>Share a website or project reference if you have one.</small>
+            <small>Subject Cannot be empty.</small>
             }
         </div>
 

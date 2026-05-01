@@ -25,6 +25,7 @@ app.use(
 	})
 );
 app.use(express.json({ limit: '200kb' }));
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/health', (_request, response) => {
 	response.json({ status: 'ok' });
