@@ -4,35 +4,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "client/**"
-      - "server/**"
-      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 jobs:
-  changes:
-    runs-on: ubuntu-latest
-    outputs:
-      frontend: ${{ steps.filter.outputs.frontend }}
-      backend: ${{ steps.filter.outputs.backend }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Detect changed paths
-        id: filter
-        uses: dorny/paths-filter@v3
-        with:
-          filters: |
-            frontend:
-              - 'client/**'
-            backend:
-              - 'server/**'
-
   deploy-frontend:
-    needs: changes
-    if: needs.changes.outputs.frontend == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -70,8 +45,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
   deploy-backend:
-    needs: changes
-    if: needs.changes.outputs.backend == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Render deployment
