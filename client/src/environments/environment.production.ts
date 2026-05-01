@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://your-render-service.onrender.com/api',
+  apiBaseUrl: 'https://portfolio-qmec.onrender.com/api',
 };
