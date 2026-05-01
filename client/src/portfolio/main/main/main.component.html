@@ -1,0 +1,55 @@
+<div class="page-shell">
+    <div class="navbar">
+        <a class="brand" href="#home">
+            <img src="assets/icons/logo.svg" alt="Logo" class="logo">
+            <span class="name">Personal</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div>
+            <button class="resume" (click)="openResume()">
+                Resume
+            </button>
+        </div>
+    </div>
+
+    @if (loading) {
+    <section class="loading-panel">
+        <div class="loader"></div>
+        <p>Loading portfolio data...</p>
+    </section>
+    } @else if (errorMessage) {
+    <section class="status-panel error">
+        <h2>Something went wrong</h2>
+        <p>{{ errorMessage }}</p>
+    </section>
+    } @else {
+    @if (portfolio) {
+    <main>
+        <app-home [portfolio]="portfolio"></app-home>
+        <app-about [portfolio]="portfolio"></app-about>
+        <app-experience [portfolio]="portfolio"></app-experience>
+        <app-skills [portfolio]="portfolio"></app-skills>
+        <app-projects [portfolio]="portfolio"></app-projects>
+        <app-contact [portfolio]="portfolio"></app-contact>
+    </main>
+
+    <footer class="footer">
+        <a class="brand" href="#home">
+            <img src="assets/icons/logo.svg" alt="Logo" class="logo">
+            <span class="name">Personal</span>
+        </a>
+        <div>
+            <span> All rights reserved.</span>
+        </div>
+    </footer>
+    }
+    }
+</div>

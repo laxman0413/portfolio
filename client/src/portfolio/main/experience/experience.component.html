@@ -1,0 +1,29 @@
+<section id="experience" class="experience-section">
+	<div class="experience-header">
+		<h2 class="section-title">My <strong>Experience</strong></h2>
+	</div>
+
+	<div class="experience-timeline">
+		@for (role of portfolio.experience; track role.company + role.title) {
+			<article class="experience-card">
+				<div class="card-top">
+					<div class="company-info">
+						@if (role.logo) {
+							<div class="company-logo">
+								<span class="logo-placeholder">{{ role.logo }}</span>
+							</div>
+						}
+						<div>
+							<h3 class="job-title">{{ role.title }} at {{ role.company }}</h3>
+						</div>
+					</div>
+					<span class="date-range">{{ role.start }} - {{ role.end }}</span>
+				</div>
+
+				@if (role.description) {
+					<p class="card-description">{{ role.description }}</p>
+				}
+			</article>
+		}
+	</div>
+</section>

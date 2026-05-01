@@ -1,0 +1,141 @@
+/* Experience Section Styles */
+.experience-section {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 2.5rem 4.5rem;
+	background: #0b0b0b;
+	color: #ffffff;
+}
+
+.experience-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-title {
+	margin: 0;
+	font-size: clamp(2.5rem, 5vw, 3.5rem);
+	line-height: 0.95;
+	letter-spacing: -0.06em;
+	font-weight: 400;
+	text-align: center;
+
+	strong {
+		font-weight: 700;
+	}
+}
+
+.experience-timeline {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	max-width: 52rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.experience-card {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.75rem;
+	border: 1px solid #2a2a2a;
+	border-radius: 0.25rem;
+	background: rgba(15, 15, 15, 0.6);
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+
+	&:hover {
+		background: rgba(30, 30, 30, 0.8);
+		border-color: #3a3a3a;
+	}
+}
+
+.card-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.company-info {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	flex: 1;
+}
+
+.company-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	flex-shrink: 0;
+	border: 1px solid #3a3a3a;
+	border-radius: 0.35rem;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.logo-placeholder {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.job-title {
+	margin: 0;
+	font-size: clamp(1.1rem, 2vw, 1.35rem);
+	line-height: 1.35;
+	font-weight: 600;
+	color: #f1f5f9;
+}
+
+.date-range {
+	display: block;
+	white-space: nowrap;
+	font-size: 0.9rem;
+	color: #94a3b8;
+}
+
+.card-description {
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: #cbd5e1;
+}
+
+@media (max-width: 1024px) {
+	.experience-section {
+		padding: 2rem 1.5rem;
+	}
+
+	.experience-timeline {
+		max-width: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.experience-section {
+		gap: 2.5rem;
+		padding: 1.75rem 1rem;
+	}
+
+	.section-title {
+		font-size: clamp(2rem, 8vw, 2.8rem);
+	}
+
+	.experience-card {
+		padding: 1.5rem;
+	}
+
+	.card-top {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.date-range {
+		white-space: normal;
+	}
+}

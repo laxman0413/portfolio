@@ -1,0 +1,87 @@
+<section id="contact" class="section-card contact-grid">
+    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="submitContactForm()">
+        <div class="input">
+            <input type="text" formControlName="name" placeholder="Your name" />
+            @if (isInvalid('name')) {
+            <small>Name is required.</small>
+            }
+        </div>
+
+        <div class="input">
+            <input type="email" formControlName="email" placeholder="Email" />
+            @if (isInvalid('email')) {
+            <small>A valid email is required.</small>
+            }
+        </div>
+
+        <div class="input">
+            <input type="text" formControlName="subject" placeholder="Your website (If exists)" />
+            @if (isInvalid('subject')) {
+            <small>Share a website or project reference if you have one.</small>
+            }
+        </div>
+
+        <div class="input">
+            <textarea rows="6" formControlName="message" placeholder="How can I help you?"></textarea>
+            @if (isInvalid('message')) {
+            <small>Message must be at least 20 characters.</small>
+            }
+        </div>
+
+        <div class="contact-actions">
+            <button class="button primary submit-button" type="submit" [disabled]="submitState === 'sending'">
+                {{ submitState === 'sending' ? 'Sending...' : 'Get In Touch' }}
+            </button>
+
+            <div class="social-links" aria-label="Social links">
+                <a class="social-link social-link--filled" href="{{ portfolio.personal.github }}" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 4.3 2.8 7.9 6.7 9.2.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.2-3.3-1.2-.4-1.1-1-1.4-1-1.4-.8-.6.1-.6.1-.6.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.2-2.2-.2-4.5-1.1-4.5-4.8 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .8-.2 2.7 1a9.5 9.5 0 0 1 4.9 0c1.9-1.2 2.7-1 2.7-1 .6 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.7-2.3 4.6-4.5 4.8.3.3.7.8.7 1.7v2.5c0 .3.2.6.7.5 3.9-1.3 6.7-4.9 6.7-9.2 0-5.4-4.4-9.8-9.8-9.8Z"/>
+                    </svg>
+                </a>
+
+                <a class="social-link" href="{{ portfolio.personal.linkedin }}" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.4 8.7H3.7v11.1h2.7V8.7ZM5 3.8a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Zm15.2 15.9v-6.2c0-3-1.6-4.4-3.8-4.4-1.8 0-2.7 1-3.2 1.7V8.7h-2.7v11.1h2.7v-6.1c0-1.6.3-3.1 2.1-3.1 1.8 0 1.8 1.7 1.8 3.2v6h3.1Z"/>
+                    </svg>
+                </a>
+
+                <a class="social-link" href="mailto:{{ portfolio.personal.email }}" aria-label="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 5.5h16c.8 0 1.5.7 1.5 1.5v10c0 .8-.7 1.5-1.5 1.5H4A1.5 1.5 0 0 1 2.5 17V7c0-.8.7-1.5 1.5-1.5Zm0 2 8 5 8-5v-.5H4v.5Zm16 9.5V9.9l-7.5 4.7c-.3.2-.7.2-1 0L4 9.9V17h16Z"/>
+                    </svg>
+                </a>
+
+                <a class="social-link" href="#home" aria-label="Home">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3.2 3.5 10v11.3h5.4v-6.4h5.2v6.4h5.4V10L12 3.2Zm0 3 6 4.8v8.3h-2.4v-6.4H8.4v6.4H6V11L12 6.2Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        @if (submitMessage) {
+        <p class="form-status" [class.success]="submitState === 'success'" [class.error]="submitState === 'error'">
+            {{ submitMessage }}
+        </p>
+        }
+    </form>
+
+    <div class="contact-details">
+        <div class="headline-block">
+            <p class="eyebrow"><span>Let's</span><span class="outline">talk</span><span>for</span></p>
+            <h2>Something special</h2>
+            <p class="sub-text">
+                I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.
+            </p>
+        </div>
+
+        <div class="contact-meta">
+            <a class="contact-email" href="mailto:{{ portfolio.personal.email }}">
+                {{ portfolio.personal.email }}
+            </a>
+            <p class="contact-phone">{{ portfolio.personal.phone }}</p>
+        </div>
+    </div>
+
+</section>

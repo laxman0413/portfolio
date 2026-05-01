@@ -1,0 +1,33 @@
+<section id="projects" class="projects-section">
+	<div class="projects-header">
+		<h2 class="section-title">My <strong>Projects</strong></h2>
+	</div>
+
+	<div class="projects-container">
+		@for (project of portfolio.projects; track project.name; let idx = $index) {
+			<article class="project-item" [class.reverse]="idx % 2 === 1">
+				@if (project.image) {
+					<div class="project-image">
+						<img [src]="project.image" [alt]="project.name" />
+					</div>
+				}
+
+				<div class="project-content">
+					<span class="project-number">{{idx+1}}</span>
+					<div class="content-inner">
+						<h3 class="project-title">{{ project.name }}</h3>
+						<p class="project-description">{{ project.description }}</p>
+
+						@if (project.github) {
+							<a class="project-link" [href]="project.github" target="_blank" rel="noreferrer" aria-label="View project">
+								<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+									<path d="M7 17H17V7H7V17ZM7 3H17V5H7V3ZM7 19H17V21H7V19Z" fill="currentColor"/>
+								</svg>
+							</a>
+						}
+					</div>
+				</div>
+			</article>
+		}
+	</div>
+</section>

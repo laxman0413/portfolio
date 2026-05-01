@@ -1,0 +1,26 @@
+.about-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 3.75rem 5rem;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	color: #0b0b0b;
+
+	.info {
+		.eyebrow {
+			margin: 0;
+			font-size: clamp(2.2rem, 4.5vw, 3rem);
+			line-height: 0.95;
+			letter-spacing: -0.05em;
+			font-weight: 500;
+		}
+
+		.detailed-summary {
+			margin-top: 1.25rem;
+			line-height: 1.75;
+			font-size: 1.05rem;
+			color: #2d2d2d;
+		}
+	}
+}

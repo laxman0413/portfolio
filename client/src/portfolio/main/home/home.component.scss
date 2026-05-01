@@ -1,0 +1,179 @@
+.home {
+	display: flex;
+	gap: 32px;
+	padding: 3.75rem 5rem;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	color: #0b0b0b;
+
+	.left-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+		max-width: 40rem;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.greeting,
+	.location,
+	.title {
+		margin: 0;
+		line-height: 0.95;
+		letter-spacing: -0.055em;
+	}
+
+	.greeting {
+		font-size: clamp(2.15rem, 4vw, 3.25rem);
+		font-weight: 400;
+		width: 1000px;
+		strong {
+			font-weight: 700;
+		}
+	}
+
+	.title {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.55rem;
+		font-size: clamp(2.35rem, 4.5vw, 3.7rem);
+		font-weight: 700;
+
+		.title-primary {
+			font-weight: 700;
+		}
+
+		.title-outline {
+			font-weight: 700;
+			color: transparent;
+			-webkit-text-stroke: 1.25px #0b0b0b;
+			text-stroke: 1.25px #0b0b0b;
+		}
+	}
+
+	.location {
+		font-size: clamp(2rem, 4vw, 3.15rem);
+		font-weight: 400;
+
+		strong {
+			font-weight: 700;
+		}
+	}
+
+	.short-intro {
+		max-width: 31rem;
+
+		p {
+			margin: 0;
+			font-size: 1rem;
+			line-height: 1.45;
+			color: #80838d;
+		}
+	}
+
+	.social-links {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+		padding-top: 0.35rem;
+	}
+
+	.social-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 1px solid #202020;
+		border-radius: 0.18rem;
+		background: #ffffff;
+		color: #0b0b0b;
+		text-decoration: none;
+		transition: transform 0.18s ease, background-color 0.18s ease;
+
+		svg {
+			width: 1.1rem;
+			height: 1.1rem;
+			fill: currentColor;
+		}
+
+		&:hover {
+			transform: translateY(-1px);
+			background: #f4f4f4;
+		}
+
+		&:focus-visible {
+			outline: 2px solid #0b0b0b;
+			outline-offset: 2px;
+		}
+	}
+
+	.social-link--filled {
+		background: #0b0b0b;
+		color: #ffffff;
+	}
+
+	.right-section {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	.profile-pic {
+		width: min(100%, 40rem);
+		height: auto;
+		object-fit: contain;
+	}
+}
+
+@media (max-width: 1024px) {
+	.home {
+		grid-template-columns: 1fr;
+		padding: 2rem 1.5rem 2.5rem;
+		gap: 2rem;
+
+		.left-section {
+			max-width: none;
+		}
+
+		.right-section {
+			justify-content: flex-start;
+		}
+
+		.profile-pic {
+			width: min(100%, 32rem);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.home {
+		padding: 1.5rem 1rem 2rem;
+		gap: 1.5rem;
+
+		.greeting,
+		.location {
+			font-size: clamp(1.8rem, 8vw, 2.4rem);
+		}
+
+		.title {
+			font-size: clamp(2rem, 9vw, 2.8rem);
+		}
+
+		.short-intro p {
+			font-size: 0.95rem;
+		}
+
+		.social-links {
+			gap: 0.75rem;
+		}
+	}
+}
