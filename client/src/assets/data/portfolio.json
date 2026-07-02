@@ -143,7 +143,7 @@
       "github": null
     },
     {
-      "image":"https://substackcdn.com/image/fetch/$s_!XX4R!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8533bf77-bf19-4feb-b744-c4c29bd38592_1616x892.jpeg",
+      "image": "https://substackcdn.com/image/fetch/$s_!XX4R!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8533bf77-bf19-4feb-b744-c4c29bd38592_1616x892.jpeg",
       "name": "Redis-Inspired In-Memory Key-Value Store",
       "description": "A thread-safe concurrent in-memory key-value store built in C++, inspired by Redis, supporting core operations with TTL-based expiration.",
       "tech_stack": [
@@ -161,7 +161,7 @@
       "github": "https://github.com/laxman0413/Redis-Cpp-In-Memory-Key-Value-Store"
     },
     {
-      "image":"https://images.wondershare.com/democreator/article/web-browser-video-recorder-2.jpg",
+      "image": "https://images.wondershare.com/democreator/article/web-browser-video-recorder-2.jpg",
       "name": "Browser Screen Recording and Sharing Platform",
       "description": "Browser-based screen recorder with optional voice capture, secure cloud storage, and RBAC-scoped shareable link generation.",
       "tech_stack": [
@@ -206,7 +206,7 @@
       "name": "TypeScript",
       "icon": "typescript"
     },
-     {
+    {
       "name": "JavaScript",
       "icon": "javascript"
     },

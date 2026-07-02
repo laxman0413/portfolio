@@ -1,19 +1,30 @@
 <div class="page-shell">
-    <div class="navbar">
+    <div class="navbar" [class.menu-open]="isMenuOpen">
         <a class="brand" href="#home">
-            <img src="assets/icons/logo.svg" alt="Logo" class="logo">
             <span class="name">Personal</span>
         </a>
 
-        <nav class="nav-links" aria-label="Primary navigation">
-            <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+        <button
+            class="menu-toggle"
+            type="button"
+            (click)="toggleMenu()"
+            [attr.aria-expanded]="isMenuOpen"
+            aria-controls="primary-navigation"
+            aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation" [class.open]="isMenuOpen">
+            <a href="#about" (click)="closeMenu()">About Me</a>
+            <a href="#experience" (click)="closeMenu()">Experience</a>
+            <a href="#projects" (click)="closeMenu()">Projects</a>
+            <a href="#skills" (click)="closeMenu()">Skills</a>
+            <a href="#contact" (click)="closeMenu()">Contact</a>
         </nav>
 
-        <div>
+        <div class="resume-wrap">
             <button class="resume" (click)="openResume()">
                 Resume
             </button>

@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
-	padding: 2.5rem 4.5rem;
+	padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1rem, 4vw, 4.5rem);
 	background: #0b0b0b;
 	color: #ffffff;
 }
@@ -35,9 +35,10 @@
 
 .project-item {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 3rem;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: clamp(1.5rem, 4vw, 3rem);
 	align-items: center;
+	min-width: 0;
 
 	&.reverse {
 		direction: rtl;
@@ -53,6 +54,7 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 300px;
+	min-width: 0;
 
 	img {
 		width: 100%;
@@ -66,6 +68,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	min-width: 0;
 }
 
 .project-number {
@@ -138,6 +141,10 @@
 	.project-item {
 		grid-template-columns: 1fr;
 		gap: 2rem;
+
+		&.reverse {
+			direction: ltr;
+		}
 	}
 
 	.project-number {
@@ -169,5 +176,9 @@
 
 	.project-description {
 		font-size: 0.95rem;
+	}
+
+	.project-image {
+		min-height: 220px;
 	}
 }

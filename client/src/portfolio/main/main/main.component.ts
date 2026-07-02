@@ -35,6 +35,7 @@ export class MainComponent implements OnInit {
   loading = true;
   errorMessage = '';
   currentYear = new Date().getFullYear();
+  isMenuOpen = false;
 
   ngOnInit(): void {
     this.portfolioService
@@ -54,6 +55,14 @@ export class MainComponent implements OnInit {
   }
 
   openResume(): void {
-    
+    window.open(this.portfolio?.resumeUrl, '_blank');
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 }

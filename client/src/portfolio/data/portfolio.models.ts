@@ -8,6 +8,7 @@ export interface PortfolioData {
   skills: Skills[];
   achievements: AchievementEntry[];
   meta: PortfolioMeta;
+  resumeUrl: string;
 }
 
 export interface PersonalDetails {
