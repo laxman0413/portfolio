@@ -9,7 +9,7 @@
             <button class="chat-close" type="button" (click)="closeChat()" aria-label="Close chat">&times;</button>
         </div>
 
-        <div class="chat-messages">
+        <div class="chat-messages" #messagesEl>
             @for (msg of messages; track $index) {
             <div class="chat-bubble" [class.user]="msg.role === 'user'" [class.assistant]="msg.role === 'assistant'">
                 {{ msg.content }}

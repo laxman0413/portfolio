@@ -83,6 +83,7 @@
 .chat-messages {
 	flex: 1;
 	overflow-y: auto;
+	scroll-behavior: auto;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
