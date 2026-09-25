@@ -31,7 +31,7 @@ function sanitizeHistory(history) {
 
 async function callGroq(messages) {
   const apiKey = process.env.GROQ_API_KEY;
-  const model = process.env.CHAT_MODEL || 'llama-3.3-70b-versatile';
+  const model = process.env.CHAT_MODEL || 'openai/gpt-oss-120b';
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), AI_REQUEST_TIMEOUT_MS);
 
