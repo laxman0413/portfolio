@@ -95,3 +95,20 @@ export interface ContactResponse {
   success: boolean;
   message: string;
 }
+
+export interface ChatMessage {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
+export interface ChatRequestPayload {
+  message: string;
+  history: ChatMessage[];
+}
+
+export interface ChatResponse {
+  success: boolean;
+  reply: string;
+  source?: 'ai' | 'fallback';
+  message?: string;
+}

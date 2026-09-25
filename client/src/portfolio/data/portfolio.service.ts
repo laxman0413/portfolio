@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, concat, map, Observable, of } from 'rxjs';
-import { ContactPayload, ContactResponse, PortfolioData } from './portfolio.models';
+import { ChatRequestPayload, ChatResponse, ContactPayload, ContactResponse, PortfolioData } from './portfolio.models';
 import { environment } from '../../environments/environment';
 import portfolioFallback from '../../assets/data/portfolio.json';
 
@@ -24,5 +24,9 @@ export class PortfolioService {
 
   sendContactMessage(payload: ContactPayload): Observable<ContactResponse> {
     return this.http.post<ContactResponse>(`${this.apiBaseUrl}/contact`, payload);
+  }
+
+  sendChatMessage(payload: ChatRequestPayload): Observable<ChatResponse> {
+    return this.http.post<ChatResponse>(`${this.apiBaseUrl}/chat`, payload);
   }
 }

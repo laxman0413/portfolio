@@ -8,6 +8,7 @@ import { ExperienceComponent } from '../experience/experience.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { ContactComponent } from '../contact/contact.component';
+import { ChatWidgetComponent } from '../chat-widget/chat-widget.component';
 
 import { PortfolioData } from '../../data/portfolio.models';
 import { PortfolioService } from '../../data/portfolio.service';
@@ -23,6 +24,7 @@ import { PortfolioService } from '../../data/portfolio.service';
     ProjectsComponent,
     SkillsComponent,
     ContactComponent,
+    ChatWidgetComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

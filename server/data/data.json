@@ -10,16 +10,16 @@
     },
     "github": "https://github.com/laxman0413",
     "linkedin": "https://linkedin.com/in/laxman-reddy-vennam",
-    "role": "Software Developer"
+    "role": "Software Engineer"
   },
-  "summary": "Software Engineer with 1+ year of experience building scalable distributed systems and production-grade SaaS platforms used by 3M+ users globally.",
-  "detailedSummary": "<div class=\"about-me\">\n  <p>\n    I am a Software Engineer with over a year of hands-on experience at a high-growth product company, Darwinbox, where I have contributed to building scalable distributed systems and production-grade SaaS platforms used by millions of users. My work primarily involves designing efficient backend & frontend services, developing RESTful APIs, and optimizing system performance. I am proficient in Python, Java, C++, and JavaScript, and I take pride in writing clean, maintainable, and efficient code that aligns with real-world business needs.\n  </p>\n\n  <p>\n    I hold a Bachelor's degree in Computer Science and Engineering, where I developed a strong foundation in data structures, algorithms, object-oriented design, and system architecture. During my academic journey, I actively worked on impactful projects which strengthened my problem-solving skills and practical understanding of software engineering.\n  </p>\n\n  <p>\n    Throughout my career, I have demonstrated the ability to collaborate with product managers, designers, and fellow engineers to deliver high-quality and reliable solutions. My goal is to continue growing as a software engineer by working on large-scale systems, solving complex engineering challenges, and contributing to innovative products that create meaningful impact. I am particularly driven to deepen my expertise in system design, distributed computing, and building robust platforms that scale efficiently.\n  </p>\n</div>",
+  "summary": "Software Engineer with 1.5+ years of experience building full-stack web apps, REST APIs, and microservices for multi-tenant SaaS platforms used by millions — currently at Keka HR, previously at Darwinbox.",
+  "detailedSummary": "<div class=\"about-me\">\n  <p>\n    I'm a Software Engineer with 1.5+ years of experience building full-stack web applications, REST APIs, and microservices for multi-tenant SaaS platforms used by millions of people. I currently work at <strong>Keka HR</strong>, building features across an Angular frontend and .NET backend for an HRMS product used by 4,000+ client organizations, and previously spent over a year at <strong>Darwinbox</strong> building fault-tolerant backend services and AI-powered HR tooling for a platform serving 3M+ users.\n  </p>\n\n  <p>\n    I'm comfortable across the stack — C#/.NET, Node.js, Angular, React, TypeScript, and SQL/NoSQL databases — with hands-on experience in microservices, event-driven systems (Kafka), CI/CD, automated testing, and production on-call support. I've also built LLM- and RAG-powered pipelines that turn unstructured documents into structured, actionable data.\n  </p>\n\n  <p>\n    I hold a Bachelor's degree in Computer Science from VNR Vignana Jyothi Institute of Engineering &amp; Technology, where I graduated as a Gold Medalist. I enjoy solving hard engineering problems and shipping production-grade software — and I'm always exploring how AI tooling, including the chat assistant on this page, can make software (and portfolios) more useful.\n  </p>\n</div>",
   "education": [
     {
       "institution": "VNR Vignana Jyothi Institute of Engineering & Technology",
       "degree": "Bachelor of Technology",
       "field": "Computer Science and Engineering",
-      "gpa": "8.9/10",
+      "gpa": "8.77/10",
       "distinction": "Gold Medalist — Highest CGPA in the Department",
       "location": "Hyderabad, Telangana, India",
       "start": "December 2021",
@@ -28,95 +28,68 @@
   ],
   "experience": [
     {
-      "title": "Software Development Engineer I (SDE-I)",
-      "company": "Darwinbox",
+      "title": "Software Engineer",
+      "company": "Keka HR",
       "type": "Full-time",
-      "location": "Hyderabad, India",
-      "start": "Jul 2025",
-      "end": "Apr 2026",
-      "description": "Leading backend initiatives for automated infrastructure and multi-tenant ticketing systems.",
+      "location": "Hyderabad, Telangana, India",
+      "start": "Aug 2026",
+      "end": "Present",
+      "description": "Building and maintaining features across an Angular frontend and .NET backend monolith for Keka's HRMS SaaS product used by 4,000-5,000 client organizations.",
       "responsibilities": [
-        "Designed and deployed a DAG-based backend data pipeline to automate MongoDB Atlas Search index provisioning across distributed environments, reducing manual operations by 90%.",
-        "Architected scalable, fault-tolerant RESTful APIs for a multi-tenant ticketing system (AskDarwin).",
-        "Implemented configuration-driven feature toggles and tenant-specific workflows.",
-        "Developed high-performance Angular modules for Time Management supporting 10,000+ concurrent users.",
-        "Owned end-to-end delivery of production-grade backend services including API design and data modeling."
+        "Develop and maintain features and fix production bugs across an Angular frontend and .NET backend monolith (Azure DevOps, Microsoft SQL Server) for an HRMS SaaS product used by 4,000-5,000 client organizations; deliver features on schedule.",
+        "Optimized SQL Server stored procedures to improve database performance and application responsiveness.",
+        "Own on-call responsibilities: respond to pages, triage and resolve production incidents; configured Zenduty alerts and monitor Grafana dashboards for proactive issue detection.",
+        "Contribute to the Performance Management and Learning modules of the Keka HRMS product; identify and raise bugs through proactive testing and root-cause analysis."
       ],
-      "tech_stack": [
-        "Node.js",
-        "Python",
-        "MongoDB",
-        "Redis",
-        "Angular",
-        "AWS",
-        "Docker",
-        "REST APIs",
-        "JWT",
-        "RBAC"
-      ],
+      "tech_stack": ["Angular", ".NET", "C#", "SQL Server", "Azure DevOps", "Grafana", "Zenduty"],
       "impact": [
-        "90% reduction in manual deployment operations",
-        "Supported 10,000+ concurrent users",
-        "Improved deployment reliability across distributed environments"
+        "Delivering features on schedule for 4,000-5,000 client organizations",
+        "Improved database performance through stored-procedure optimization",
+        "Faster incident detection and response via Grafana + Zenduty on-call tooling"
       ]
     },
     {
-      "title": "Product Development Intern",
+      "title": "Software Development Engineer I (SDE-I)",
       "company": "Darwinbox",
-      "type": "Internship",
-      "location": "Hyderabad, India",
+      "type": "Full-time",
+      "location": "Hyderabad, Telangana, India",
       "start": "Jan 2025",
-      "end": "Jun 2025",
-      "description": "Focused on AI/ML integration and backend performance optimization.",
+      "end": "Apr 2026",
+      "description": "Owned backend initiatives for automated infrastructure, a multi-tenant ticketing system, and AI-powered HR tooling for a SaaS platform serving 3M+ users.",
       "responsibilities": [
-        "Engineered a RAG-based HR analytics engine combining LLMs with vector databases to reduce manual analysis effort by 70%.",
-        "Implemented a Kanban board with Server-Sent Events (SSE) for real-time tracking of AI-generated tasks.",
-        "Built secure end-to-end backend pipelines using Node.js with JWT-based authentication.",
-        "Improved API response times by 40% through Redis caching and optimized database queries.",
-        "Collaborated cross-functionally in an agile environment to ship production-grade features."
+        "Designed and deployed a DAG-based distributed data pipeline automating MongoDB Atlas Search index provisioning across environments, reducing manual operational effort by 90%.",
+        "Engineered fault-tolerant, scalable backend microservices and REST APIs for a multi-tenant ticketing system (AskDarwin), handling high-throughput requests and secure cross-tenant access.",
+        "Implemented a configuration-driven feature toggle system across 1,400+ multi-tenant environments, enabling per-customer changes without code deployments and cutting release cycle time by 75%.",
+        "Built a data pipeline using LLMs, RAG, and vector search to convert unstructured HR documents into actionable insights, cutting manual review time by 70%.",
+        "Developed a real-time Kanban task board using Server-Sent Events and JWT authentication, with automated tests and CI/CD.",
+        "Developed high-performance Angular and React modules for Time Management (timesheets, attendance, leave management), supporting 10,000+ concurrent users.",
+        "Conducted regular code reviews; used GitHub Copilot and Cursor to accelerate coding and testing while manually validating all AI-assisted code before merging."
       ],
-      "tech_stack": [
-        "Node.js",
-        "Angular",
-        "MongoDB",
-        "Redis",
-        "JWT",
-        "RBAC",
-        "LLMs",
-        "RAG",
-        "Vector Databases",
-        "SSE",
-        "REST APIs"
-      ],
+      "tech_stack": ["Node.js", "Python", "MongoDB", "Redis", "Angular", "React", "AWS", "Docker", "Kafka", "REST APIs", "JWT", "RBAC", "LLMs", "RAG"],
       "impact": [
-        "70% reduction in manual HR analysis effort",
-        "40% improvement in API response times"
+        "90% reduction in manual index-provisioning operations",
+        "75% faster release cycles across 1,400+ tenant environments",
+        "70% reduction in manual HR document review time",
+        "Supported 10,000+ concurrent users across time-management modules"
       ]
     },
     {
       "title": "Project Intern",
-      "company": "IIT Guwahati",
+      "company": "IIIT Guwahati",
       "type": "Internship",
       "location": "Guwahati, Assam, India (Remote)",
       "start": "May 2024",
       "end": "Dec 2024",
-      "description": "Full-stack development for social impact projects.",
+      "description": "Full-stack development for social impact projects under faculty guidance.",
       "responsibilities": [
-        "Developed a full-stack RBAC-enabled web application using React.js, Node.js, and MySQL.",
-        "Designed and implemented core platform features including job listing, search, and matching functionalities.",
-        "Contributed to architectural decisions for a scalable solution addressing regional employment challenges in Nagaland.",
+        "Developed a full-stack, RBAC-enabled web application (React, Node.js, MySQL) connecting 1,000+ small-scale industries in Nagaland with job seekers to address regional employment challenges.",
+        "Architected core platform features — job listing, search, and matching — for a scalable solution addressing regional unemployment.",
         "Built a job marketplace platform — NagaConnect — connecting local workers with job providers."
       ],
-      "tech_stack": [
-        "React.js",
-        "Node.js",
-        "MySQL",
-        "RBAC",
-        "REST APIs"
-      ],
+      "tech_stack": ["React.js", "Node.js", "MySQL", "RBAC", "REST APIs"],
       "impact": [
-        "Built scalable solution for regional unemployment challenges in Nagaland",
-        "Delivered under academic research supervision at IIT Guwahati"
+        "Built a scalable solution for regional unemployment challenges in Nagaland",
+        "Delivered under academic research supervision at IIIT Guwahati"
       ]
     }
   ],
@@ -124,34 +97,33 @@
     {
       "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*H20Gumbv6J7ae3shR0Liww.png",
       "name": "LLM-Based HR Document Intelligence System",
-      "description": "AI-powered HR insights system leveraging LLM prompt engineering to convert large-scale unstructured HR documents into structured tasks.",
-      "tech_stack": [
-        "Angular",
-        "Node.js",
-        "MongoDB",
-        "AWS S3",
-        "SSE",
-        "LLMs",
-        "Prompt Engineering"
-      ],
+      "description": "AI-powered HR insights system leveraging LLM prompt engineering, RAG, and vector search to convert large-scale unstructured HR documents into structured, queryable tasks.",
+      "tech_stack": ["Angular", "Node.js", "MongoDB", "AWS S3", "Kafka", "SSE", "LLMs", "RAG", "Prompt Engineering"],
       "highlights": [
         "Reduced manual HR document analysis effort by 70%",
-        "Converted unstructured documents into structured tasks at scale",
-        "Enabled automated, scalable intelligence workflows"
+        "Converted unstructured documents into structured tasks at scale via prompt chaining",
+        "Event-driven pipeline built on Kafka with real-time task tracking over SSE"
       ],
       "type": "AI / ML",
       "github": null
     },
     {
-      "image":"https://substackcdn.com/image/fetch/$s_!XX4R!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8533bf77-bf19-4feb-b744-c4c29bd38592_1616x892.jpeg",
+      "name": "AI Portfolio Assistant",
+      "description": "A context-aware chatbot embedded in this portfolio that answers visitor questions on Laxman's behalf, grounded in his real resume, experience, and project data.",
+      "tech_stack": ["Angular", "Node.js", "Express", "Groq LLM API", "REST APIs"],
+      "highlights": [
+        "Answers natural-language questions about experience, skills, and projects using a live LLM",
+        "Grounds every response in structured resume/portfolio data via a system-prompt context layer",
+        "Gracefully degrades to a rule-based responder when no AI API key is configured"
+      ],
+      "type": "AI / ML",
+      "github": "https://github.com/laxman0413/portfolio"
+    },
+    {
+      "image": "https://substackcdn.com/image/fetch/$s_!XX4R!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8533bf77-bf19-4feb-b744-c4c29bd38592_1616x892.jpeg",
       "name": "Redis-Inspired In-Memory Key-Value Store",
       "description": "A thread-safe concurrent in-memory key-value store built in C++, inspired by Redis, supporting core operations with TTL-based expiration.",
-      "tech_stack": [
-        "C++",
-        "Multithreading",
-        "Mutex",
-        "Data Structures"
-      ],
+      "tech_stack": ["C++", "Multithreading", "Mutex", "Data Structures"],
       "highlights": [
         "Supports SET/GET/DELETE operations at O(1) average time complexity",
         "TTL-based key expiration with background cleanup worker thread",
@@ -161,17 +133,10 @@
       "github": "https://github.com/laxman0413/Redis-Cpp-In-Memory-Key-Value-Store"
     },
     {
-      "image":"https://images.wondershare.com/democreator/article/web-browser-video-recorder-2.jpg",
+      "image": "https://images.wondershare.com/democreator/article/web-browser-video-recorder-2.jpg",
       "name": "Browser Screen Recording and Sharing Platform",
       "description": "Browser-based screen recorder with optional voice capture, secure cloud storage, and RBAC-scoped shareable link generation.",
-      "tech_stack": [
-        "Angular",
-        "Node.js",
-        "AWS S3",
-        "Web APIs",
-        "RBAC",
-        "REST APIs"
-      ],
+      "tech_stack": ["Angular", "Node.js", "AWS S3", "Web APIs", "RBAC", "REST APIs"],
       "highlights": [
         "Cut bug reproduction time by 40%",
         "Securely stores recordings in AWS S3",
@@ -179,112 +144,71 @@
       ],
       "type": "Full-Stack",
       "github": null
+    },
+    {
+      "name": "Full-Stack E-Commerce Application",
+      "description": "A full-stack e-commerce application built to practice production .NET patterns, featuring an Angular storefront, .NET REST APIs, and a relational SQL Server backend.",
+      "tech_stack": [".NET", "C#", "SQL Server", "Angular", "REST APIs"],
+      "highlights": [
+        "Implemented product catalog, cart, and order flows end-to-end",
+        "Designed a normalized SQL Server schema for products, orders, and inventory",
+        "Built REST APIs in .NET consumed by an Angular frontend"
+      ],
+      "type": "Full-Stack",
+      "github": null
     }
   ],
   "skills": [
-    {
-      "name": "React.js",
-      "icon": "react"
-    },
-    {
-      "name": "Angular",
-      "icon": "angular"
-    },
-    {
-      "name": "Node.js",
-      "icon": "nodejs"
-    },
-    {
-      "name": "Express.js",
-      "icon": "express"
-    },
-    {
-      "name": "Next.js",
-      "icon": "nextjs"
-    },
-    {
-      "name": "TypeScript",
-      "icon": "typescript"
-    },
-     {
-      "name": "JavaScript",
-      "icon": "javascript"
-    },
-    {
-      "name": "SQL",
-      "icon": "sql"
-    },
-    {
-      "name": "MongoDB",
-      "icon": "mongodb"
-    },
-    {
-      "name": "Redis",
-      "icon": "redis"
-    },
-    {
-      "name": "Python",
-      "icon": "python"
-    },
-    {
-      "name": "C++",
-      "icon": "cpp"
-    },
-    {
-      "name": "Git",
-      "icon": "git"
-    },
-    {
-      "name": "Docker",
-      "icon": "docker"
-    },
-    {
-      "name": "AWS",
-      "icon": "aws"
-    }
+    { "name": "Angular", "icon": "angular" },
+    { "name": "React.js", "icon": "react" },
+    { "name": "Node.js", "icon": "nodejs" },
+    { "name": "Express.js", "icon": "express" },
+    { "name": ".NET / C#", "icon": "dotnet" },
+    { "name": "TypeScript", "icon": "typescript" },
+    { "name": "JavaScript", "icon": "javascript" },
+    { "name": "Java", "icon": "java" },
+    { "name": "Python", "icon": "python" },
+    { "name": "C++", "icon": "cpp" },
+    { "name": "SQL", "icon": "sql" },
+    { "name": "MongoDB", "icon": "mongodb" },
+    { "name": "Redis", "icon": "redis" },
+    { "name": "Kafka", "icon": "kafka" },
+    { "name": "AWS", "icon": "aws" },
+    { "name": "Docker", "icon": "docker" },
+    { "name": "Kubernetes", "icon": "kubernetes" },
+    { "name": "Git", "icon": "git" }
   ],
   "achievements": [
     {
       "title": "Gold Medalist",
-      "description": "Awarded Gold Medal for achieving the Highest CGPA in the Computer Science Department, B.Tech",
+      "description": "Awarded Gold Medal for achieving the Highest CGPA in the Computer Science Department, B.Tech.",
       "year": 2025
     },
     {
-      "title": "SmartInterviews — Certified Smart Coder (Diamond)",
-      "description": "Ranked Top 1.6% out of 32,570 participants (Rank 523/32,570)",
-      "year": 2024
+      "title": "LeetCode Knight",
+      "description": "Rated 1800+ with 600+ problems solved, demonstrating strong command of data structures & algorithms.",
+      "year": 2026
+    },
+    {
+      "title": "CodeChef 3-Star",
+      "description": "Peak rating of 1777 in competitive programming.",
+      "year": 2025
+    },
+    {
+      "title": "HackerRank 5-Star",
+      "description": "5-Star Problem Solving certification in C++.",
+      "year": 2025
     }
   ],
   "meta": {
-    "current_role": "Software Development Engineer I",
-    "current_company": "Darwinbox",
-    "total_experience_years": 1.25,
-    "domain_focus": [
-      "Backend Engineering",
-      "Distributed Systems",
-      "SaaS Platforms",
-      "FinTech",
-      "AI/ML Integration"
-    ],
-    "open_to": [
-      "Full-time SWE roles",
-      "Backend-focused roles",
-      "FinTech",
-      "Platform Engineering"
-    ],
-    "target_roles": [
-      "Software Engineer I",
-      "Backend Engineer",
-      "Full-Stack Engineer"
-    ],
-    "target_companies": [
-      "Rippling",
-      "Stripe",
-      "Razorpay",
-      "Zepto",
-      "CRED"
-    ],
-    "profile_generated": "2026-04-29"
+    "current_role": "Software Engineer",
+    "current_company": "Keka HR",
+    "total_experience_years": 1.5,
+    "domain_focus": ["Full-Stack Engineering", "Distributed Systems", "SaaS Platforms", "AI/ML Integration"],
+    "open_to": ["Full-time SWE roles", "Full-stack roles", "Backend-focused roles", "Platform Engineering"],
+    "target_roles": ["Software Engineer II", "Full-Stack Engineer", "Backend Engineer"],
+    "target_companies": ["Rippling", "Stripe", "Razorpay", "Zepto", "CRED"],
+    "profile_generated": "2026-09-25"
   },
-   "resumeUrl": "https://drive.google.com/file/d/1cYtSYhwf0QZD_UnG_ssoetbYxcjmPTSQ/view?usp=sharing"
+  "resumeUrl": "assets/resume/Laxman-Reddy-Vennam-Resume.pdf"
 }
