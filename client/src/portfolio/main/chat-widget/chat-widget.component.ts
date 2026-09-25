@@ -1,4 +1,4 @@
-import { Component, DestroyRef, Input, inject } from '@angular/core';
+import { Component, DestroyRef, ElementRef, Input, ViewChild, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -15,6 +15,7 @@ import { PortfolioService } from '../../data/portfolio.service';
 })
 export class ChatWidgetComponent {
   @Input() portfolio!: PortfolioData;
+  @ViewChild('messagesEl') messagesEl?: ElementRef<HTMLDivElement>;
 
   private readonly portfolioService = inject(PortfolioService);
   private readonly destroyRef = inject(DestroyRef);
@@ -43,6 +44,24 @@ export class ChatWidgetComponent {
         content: `Hi! I'm an AI assistant briefed on ${firstName}'s resume and portfolio. Ask me about his experience, skills, or projects.`,
       });
     }
+
+    if (this.isOpen) {
+      this.scrollToBottom();
+    }
+  }
+
+  private scrollToBottom(): void {
+    // Wait two animation frames so the browser has fully laid out (and
+    // wrapped the text of) whatever was just added before we measure
+    // scrollHeight — a single setTimeout(0) can still race Angular's render.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const el = this.messagesEl?.nativeElement;
+        if (el) {
+          el.scrollTop = el.scrollHeight;
+        }
+      });
+    });
   }
 
   closeChat(): void {
@@ -65,6 +84,7 @@ export class ChatWidgetComponent {
     this.messages.push({ role: 'user', content: text });
     this.draft = '';
     this.isSending = true;
+    this.scrollToBottom();
 
     this.portfolioService
       .sendChatMessage({ message: text, history })
@@ -73,6 +93,7 @@ export class ChatWidgetComponent {
         next: (response) => {
           this.messages.push({ role: 'assistant', content: response.reply });
           this.isSending = false;
+          this.scrollToBottom();
         },
         error: (error: HttpErrorResponse) => {
           this.messages.push({
@@ -82,6 +103,7 @@ export class ChatWidgetComponent {
               "Sorry, I couldn't reach the assistant right now. Please try again in a moment, or use the contact form below.",
           });
           this.isSending = false;
+          this.scrollToBottom();
         },
       });
   }

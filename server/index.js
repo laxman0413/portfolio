@@ -7,6 +7,11 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Render (and most hosts) put the app behind a reverse proxy, so req.ip
+// would otherwise resolve to the proxy's address for every visitor and
+// collapse the /api/chat rate limiter into one shared bucket.
+app.set('trust proxy', 1);
 const allowedOrigins = (process.env.CLIENT_ORIGIN || 'http://localhost:4200')
 	.split(',')
 	.map((origin) => origin.trim())
